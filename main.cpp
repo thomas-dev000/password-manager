@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-    system("cls"); //Permet de nettoyer la console entre chaque action
+    system("cls"); //Permet de nettoyer la console avant de commencer
 
-    if (Verifier_mot_de_passe_maitre() == 0)
+    if (Verifier_mot_de_passe_maitre() == 0) //Vérification du mot de passe maître
     {
         cout << "Acces refuse. Fermeture du programme." << endl;
         system("pause");
@@ -26,6 +26,8 @@ int main()
         cout << "Si vous souhaitez Quitter le coffre fort, tapez 4." << endl << endl;
         cout << "\n--------------------------\n" << endl << endl;
         cout << "Votre choix : ";
+
+        //Pour être sur que l'utilisateur rentre un chiffre compris entre 1 et 4 et non pas autre chose (autre chiffres ou caractère par erreur), j'ajoute les lignes suivantes
         if (!(cin >> choix))
         {
             cin.clear(); // Réinitialise l'état de cin
