@@ -58,19 +58,33 @@ Pour compiler et exécuter ce gestionnaire de mots de passe, vous aurez besoin d
 
 
 
-Si vous souhaitez utiliser l'application sans compiler le code, des exécutables pré-compilés pour Windows sont disponibles dans la section \[Releases](https://github.com/votre\_utilisateur/votre\_repo/releases) de ce dépôt.
+Si vous souhaitez utiliser l'application sans compiler le code, des exécutables pré-compilés pour Windows sont disponibles sur (https://github.com/thomas-dev000/password-manager.git).
 
 
 
-1\.  Téléchargez la dernière version de `password\_manager.exe` depuis la page des \[Releases](https://github.com/votre\_utilisateur/votre\_repo/releases).
+1\.  Téléchargez la dernière version de `password\_manager.exe` depuis la page (https://github.com/thomas-dev000/password-manager/blob/main/PasswordManager.exe).
 
 2\.  Exécutez le fichier téléchargé.
 
 
-\### Mot de passe : 
+\## 🔑 Mot de passe maître : 
 
-Un mot de passe maitre est demander avant d'accéder au coffre fort, le mot de passe est : M0t_d&_p@ss& 
+Pour garantir la sécurité et l'accès exclusif au coffre-fort, un mot de passe maître est requis à chaque lancement du programme.
 
+Par défaut, le mot de passe maître est : M0t_d&_p@ss& 
+
+Nous vous encourageons fortement à changer ce mot de passe par défaut pour une valeur plus personnelle et sécurisée. Pour cela :
+
+1. Ouvrez le fichier password_manager.cpp.
+
+2. Rendez-vous à la ligne 195 (ou recherchez M0t_d&_p@ss&).
+
+3. Modifiez la condition if (mot_de_passe_maitre == "M0t_d&_p@ss&") en remplaçant "M0t_d&_p@ss&" par votre nouveau mot de passe souhaité.
+
+// Exemple de modification à la ligne 195
+if (mot_de_passe_maitre == "VotreNouveauMotDePasse")
+
+4. N'oubliez pas de recompiler le programme après cette modification pour que le changement prenne effet.
 
 ---
 
