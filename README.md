@@ -67,6 +67,10 @@ Si vous souhaitez utiliser l'application sans compiler le code, des exécutables
 2\.  Exécutez le fichier téléchargé.
 
 
+\### Mot de passe : 
+
+Un mot de passe maitre est demander avant d'accéder au coffre fort, le mot de passe est : M0t_d&_p@ss& 
+
 
 ---
 
